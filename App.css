@@ -1,0 +1,63 @@
+.App {
+  text-align: center;
+  background: linear-gradient(135deg, #fffbe6, #ffe0f0);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 20px 0;
+  color: #D81B60;
+  font-family: "Segoe UI", cursive;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.svg-container {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  animation: rotate 80s linear infinite;
+  filter: drop-shadow(0px 0px 10px rgba(255, 105, 180, 0.4));
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.side-panel {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  width: 260px;
+  text-align: left;
+}
+
+.side-panel h2 {
+  color: #FF6F61;
+  margin-bottom: 15px;
+}
+
+.ring-details {
+  margin-bottom: 15px;
+}
+
+.color-box {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #444;
+  margin-right: 6px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
